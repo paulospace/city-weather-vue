@@ -7,7 +7,7 @@ import DayWeather from "./DayWeather";
 export default {
   name: "WeekWeather",
   props: {
-    weeklyWeather: Array,
+    weeklyWeather: [],
   },
   components: { DayWeather },
 };
