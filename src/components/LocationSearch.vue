@@ -27,6 +27,7 @@ import axios from "axios";
 
 const apiKey =
   "pk.eyJ1Ijoic3BhY2VhcmNoZXIiLCJhIjoiY2tmOWFuMGZwMGszbzJycnFmcDJsYzBveSJ9.-995FXHbG6UJIIvne3PPRQ";
+
 /**
  * Get city matches from the Mapbox Geolocation API
  *
