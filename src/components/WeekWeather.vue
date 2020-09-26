@@ -1,5 +1,7 @@
 <template>
-  <div class="WeekWeather"></div>
+  <div class="WeekWeather">
+    <DayWeather v-for="day in weeklyWeather" :key="day.id" v-bind="day" />
+  </div>
 </template>
 
 <script>
