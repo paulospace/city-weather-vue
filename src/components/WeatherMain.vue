@@ -113,9 +113,12 @@ export default {
 
 <style>
 .WeatherMain {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   width: 100%;
   min-height: 100vh;
   color: #ffffff;
-  background-color: #002f2f;
+  background-color: #0f0f0f;
 }
 </style>
