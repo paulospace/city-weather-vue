@@ -84,7 +84,20 @@ export default {
       getCurrentWeather(location.lat, location.lon, openWeatherApiKey).then(
         (weather) => {
           this.currentWeather = weather.current;
-          this.dailyWeather = weather.daily;
+
+          this.dailyWeather = [];
+          weather.daily.forEach((day) => {
+            this.dailyWeather.push({
+              temp: day.temp.day,
+              tempMax: day.temp.max,
+              tempMin: day.temp.min,
+              windSpeed: day.wind_speed,
+              humidity: day.humidity,
+              date: day.dt,
+              icon: day.weather[0].icon,
+              desc: day.weather[0].description,
+            });
+          });
         }
       );
     },
@@ -98,4 +111,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.WeatherMain {
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #002f2f;
+}
+</style>

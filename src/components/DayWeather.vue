@@ -19,6 +19,7 @@ export default {
     humidity: [String, Number],
     pop: [String, Number],
     date: Number,
+    icon: String,
     desc: String,
   },
 };
